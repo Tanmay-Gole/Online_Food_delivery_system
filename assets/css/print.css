@@ -1,0 +1,40 @@
+/* Print Stylesheet for Invoices and Receipts */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+    padding: 0;
+    margin: 0;
+  }
+  .site-header, .site-footer, .no-print, .btn, .nav-actions, .mobile-toggle {
+    display: none !important;
+  }
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .invoice-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .invoice-header {
+    border-bottom: 2px solid #333 !important;
+  }
+  .invoice-table th {
+    background: #eee !important;
+    color: black !important;
+    border-bottom: 1px solid #333 !important;
+  }
+  .invoice-table td {
+    border-bottom: 1px solid #ccc !important;
+  }
+  .badge-delivered, .badge-accepted, .status-badge {
+    border: 1px solid #333;
+    color: black !important;
+    background: none !important;
+  }
+}
